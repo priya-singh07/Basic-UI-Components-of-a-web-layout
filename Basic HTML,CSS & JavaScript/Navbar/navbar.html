@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .navbar{
+            position: fixed;
+            background-color: black;
+            height: 4rem;
+            width: 100vw;
+            color: aliceblue;
+            text-align: center;
+            align-items: center;
+        }
+        .nav-items{
+            display: flex;
+            padding: 3px 1rem;
+            list-style: none;
+            align-items: center;
+            margin-top: 1rem;
+        }
+        .nav{
+            margin-right: 3rem;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        @media(max-width: 700px)
+        {
+            .nav-items{
+            display: flex;
+            padding: 3px 5px;
+            list-style: none;
+            align-items: center;
+            margin-top: 1rem;
+            }
+            .nav{
+                margin-right: 1rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"></div>
+        <div class="heading"></div>
+        <ul class="nav-items"> 
+            <a class="nav" href=""><li >About</li></a>
+            <a class="nav" href=""><li >home</li></a>
+            <a class="nav" href=""><li >contact</li></a>
+            <a class="nav" href=""><li >services</li></a>
+        </ul>
+    </div>
+</body>
+</html>
